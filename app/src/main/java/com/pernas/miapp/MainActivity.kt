@@ -12,21 +12,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var button = findViewById<Button>(R.id.myButton)
-        var myTextView = findViewById<TextView>(R.id.textView)
+        var button = findViewById<Button>(R.id.myButton)// pick the id
+        var myTextView = findViewById<TextView>(R.id.textView) // pick the id
         var sum = 0
 
 
 
         button.setOnClickListener() {
-
             sum += 1
-            myTextView.setText("""Has pulsado el boton  $sum veces""")
-            }
+            myTextView.setText("""Has pulsado el boton  $sum veces""")//concadeno la variable que va sumando
         }
-
-
     }
+
+
+}
 
 
 
