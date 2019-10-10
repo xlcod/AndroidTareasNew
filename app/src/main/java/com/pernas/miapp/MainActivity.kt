@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener() {
             sum += 1
-            myTextView.setText("""Has pulsado el boton  $sum veces""")//concadeno la variable que va sumando
+            var message = getString(R.string.button_pressed,sum,sum)
+            myTextView.setText("""$message  $sum veces""")//concadeno la variable que va sumando
+            //myTextView.text= message
         }
     }
 

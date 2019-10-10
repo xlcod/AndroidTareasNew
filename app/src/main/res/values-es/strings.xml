@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">miApp</string>
-    <string name="textView">you clicked</string>
-    <string name="boton">Click</string>
+    <string name="textView">Has clickeado</string>
+    <string name="boton">prueba</string>
     <string name="button_pressed">button pressed %1$d times %2$d</string>
 </resources>
