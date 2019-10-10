@@ -1,5 +1,6 @@
 package com.pernas.miapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -7,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var profileButton : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,8 +17,22 @@ class MainActivity : AppCompatActivity() {
         var button = findViewById<Button>(R.id.myButton)// pick the id
         var myTextView = findViewById<TextView>(R.id.textView) // pick the id
         var sum = 0
+        profileButton = findViewById(R.id.myProfile)
 
 
+
+        profileButton.setOnClickListener {
+        val intent = Intent(this, ProfileActivity::class.java)
+        intent.putExtra("name","Brandom semenuk")
+            intent.putExtra("birth_date"," 15/15/92")
+            intent.putExtra("city","Alberta")
+            intent.putExtra("image",R.drawable.foto)
+
+
+            startActivity(intent)
+
+
+        }
 
         button.setOnClickListener() {
             sum += 1
