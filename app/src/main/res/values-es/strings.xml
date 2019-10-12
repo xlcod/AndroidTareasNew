@@ -5,4 +5,6 @@
     <string name="button_pressed">button pressed %1$d times %2$d</string>
     <string name="birth_date">Fecha nacimiento :</string>
     <string name="city">ciudad :</string>
+    <string name="birthDate">14/11/92</string>
+    <string name="cityName">Alberta</string>
 </resources>

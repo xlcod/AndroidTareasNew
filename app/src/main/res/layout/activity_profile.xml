@@ -11,13 +11,14 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/riderImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars[2]" />
+        android:scaleType="matrix"
+        android:src="@drawable/foto" />" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/nameRider"
         style="@style/ProfileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,19 +62,19 @@
 
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/BirthDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                tools:text="14/11/92"
+                tools:text="@string/birthDate"
                 android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                tools:text="Alberta"
+                tools:text="@string/cityName"
                 android:textStyle="italic" />
         </LinearLayout>
 
