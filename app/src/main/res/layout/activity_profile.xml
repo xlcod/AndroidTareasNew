@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".ProfileActivity">
 
 
-    <ImageView
-        android:id="@+id/riderImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:scaleType="matrix"
-        android:src="@drawable/foto" />" />
+        //ImageView Round Library
 
-    <TextView
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/riderImage"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:src="@drawable/foto"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#38C0AD" />
+
+
+        <TextView
         android:id="@+id/nameRider"
         style="@style/ProfileName"
         android:layout_width="wrap_content"
@@ -44,6 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/birth_date"
+                android:textSize="20sp"
                 android:textStyle="bold|italic" />
 
             <TextView
@@ -51,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/city"
+                android:textSize="20sp"
                 android:textStyle="bold|italic" />
         </LinearLayout>
 
@@ -66,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                tools:text="@string/birthDate"
+                android:textSize="18sp"
                 android:textStyle="italic" />
 
             <TextView
@@ -74,10 +85,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                tools:text="@string/cityName"
+                android:textSize="18sp"
                 android:textStyle="italic" />
         </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:text="Description"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

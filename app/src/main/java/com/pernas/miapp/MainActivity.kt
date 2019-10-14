@@ -28,6 +28,13 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("birth_date", " 15/15/92")
             intent.putExtra("city", "Alberta")
             intent.putExtra("image", R.drawable.foto)
+            intent.putExtra(
+                "description",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non interdum lorem." +
+                        " Nulla porta suscipit metus ac bibendum. Donec sollicitudin purus sit amet lacus accumsan, et sagittis " +
+                        "ligula dapibus. Curabitur tempus, mi vitae hendrerit accumsan, erat turpis tristique odio, vel dapibus mauris sapien non lorem." +
+                        " Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus non ipsum vel erat ultricies maximus."
+            )
 
             startActivity(intent)
 
