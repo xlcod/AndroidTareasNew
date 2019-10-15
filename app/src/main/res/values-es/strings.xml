@@ -7,4 +7,5 @@
     <string name="city">ciudad :</string>
     <string name="birthDate">14/11/92</string>
     <string name="cityName">Alberta</string>
+    <string name="description">Descripcion</string>
 </resources>

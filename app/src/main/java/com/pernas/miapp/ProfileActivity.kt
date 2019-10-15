@@ -8,20 +8,17 @@ import android.widget.TextView
 class ProfileActivity : AppCompatActivity() {
 
 
-    private lateinit  var nameRider: TextView
-    private lateinit  var birthDate: TextView
-    private lateinit  var city: TextView
-    private lateinit  var riderImage: ImageView
+    private lateinit var nameRider: TextView
+    private lateinit var birthDate: TextView
+    private lateinit var city: TextView
+    private lateinit var riderImage: ImageView
     private lateinit var description: TextView
-
-
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-       //val name =  intent.extras?.getString("name")
+
 
         nameRider = findViewById(R.id.nameRider)
         birthDate = findViewById(R.id.BirthDate)
@@ -35,7 +32,7 @@ class ProfileActivity : AppCompatActivity() {
         var name_rider = intent.extras?.getString("riderName")
         var birth_date = intent.extras?.getString("birth_date")
         var cityName = intent.extras?.getString("city")
-        var profileImage = intent.getIntExtra("image",1)
+        var profileImage = intent.getIntExtra("image", 1)
         var descriptionCont = intent.extras?.getString("description")
 
         nameRider.text = name_rider

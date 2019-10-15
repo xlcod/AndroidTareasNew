@@ -30,10 +30,10 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("image", R.drawable.foto)
             intent.putExtra(
                 "description",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non interdum lorem." +
-                        " Nulla porta suscipit metus ac bibendum. Donec sollicitudin purus sit amet lacus accumsan, et sagittis " +
-                        "ligula dapibus. Curabitur tempus, mi vitae hendrerit accumsan, erat turpis tristique odio, vel dapibus mauris sapien non lorem." +
-                        " Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus non ipsum vel erat ultricies maximus."
+                "Brandon Semenuk is a Canadian freeride mountain biker from Whistler, British Columbia." +
+                        " Semenuk is a 3-time FMB World Tour Gold Medalist. He is a 2013 Munich X-Games Silver medalist in the Mountain Bike Slopestyle event," +
+                        " a 2008 and 2016 Red Bull Rampage winner and a 5-time Red Bull Joyride winner." +
+                        " He is known as one of the best freeride mountain bikers in history."
             )
 
             startActivity(intent)
