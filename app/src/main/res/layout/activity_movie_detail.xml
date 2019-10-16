@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/foto2" />
+        android:src="@drawable/foto2" />
 
     <TextView
         android:id="@+id/movieTitle"
@@ -25,7 +25,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:text="Revel in the Chaos"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/idRating"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -73,7 +73,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="16dp"
-        android:text='Lorem Ipsum "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..." "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit posuere, tempus velit id, ultricies orci. Quisque ullamcorper consectetur est eget dictum. Suspendisse semper mi ac erat faucibus, vitae congue ante malesuada. Integer sagittis eu odio a fringilla. '
         android:textAlignment="gravity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +89,7 @@
         tools:layout_editor_absoluteX="411dp" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/idRating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
