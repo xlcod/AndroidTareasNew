@@ -18,9 +18,7 @@ class MovieDetailActivity : AppCompatActivity() {
         description = "Lorem Ipsum\n" +
                 "\"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...\"\n" +
                 "\"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...\"\n" +
-                "\n" +
-                "\n" +
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit posuere, tempus velit id, ultricies orci. Quisque ullamcorper consectetur est eget dictum. Suspendisse semper mi ac erat faucibus, vitae congue ante malesuada. Integer sagittis eu odio a fringilla. Vestibulum et odio risus. Proin at justo tincidunt, mattis mi vel, finibus dolor. ",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         rating = 7.5
     )
 
@@ -30,7 +28,7 @@ class MovieDetailActivity : AppCompatActivity() {
 
         with(movie){
             movieTitle.text = title
-            dateTitle.text = year
+            idYear.text = year
             idGenre.text = genre
             idDescription.text = description
             idRating.text = rating.toString()

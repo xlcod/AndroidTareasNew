@@ -62,7 +62,7 @@
         android:id="@+id/idYear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1898"
+
         android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@+id/dateTitle"
         app:layout_constraintStart_toStartOf="@+id/idGenre" />
@@ -93,7 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
-        android:text="8.5"
+
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/movieTitle"
         app:layout_constraintEnd_toEndOf="parent" />

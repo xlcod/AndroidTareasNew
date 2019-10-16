@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         button = findViewById<Button>(R.id.myButton)
         myTextView = findViewById<TextView>(R.id.textView)
         profileButton = findViewById(R.id.myProfile)
@@ -50,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         movieButton.setOnClickListener {
             val intent = Intent(this, MovieDetailActivity::class.java)
-            intent.putExtra("title","Revel in the chaos")
+            /*intent.putExtra("title","Revel in the chaos")
             intent.putExtra("genre", "Sports")
             intent.putExtra("date", "2016")
             intent.putExtra("rating", "8.3")
@@ -59,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                     " simply because it is pain...\"   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et velit posuere," +
                     " tempus velit id, ultricies orci. Quisque ullamcorper consectetur est eget dictum. Suspendisse" +
                     " semper mi ac erat faucibus, vitae congue ante malesuada. " +
-                    "Integer sagittis eu odio a fringilla. ")
+                    "Integer sagittis eu odio a fringilla. ")*/
             startActivity(intent)
         }
 
