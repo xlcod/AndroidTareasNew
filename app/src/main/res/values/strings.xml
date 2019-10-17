@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">miApp</string>
+    <string name="textView">you clicked</string>
+    <string name="boton">To profile </string>
+    <string name="button_pressed">button pressed %1$d times %2$d</string>
+    <string name="birth_date">Birth date :</string>
+    <string name="city">City :</string>
+    <string name="birthDate">14/11/92</string>
+    <string name="cityName">Alberta</string>
+    <string name="description">Description</string>
 </resources>
