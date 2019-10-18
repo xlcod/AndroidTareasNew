@@ -64,21 +64,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
-
-//val movvies  = listof<movies> {
-       // movie()
-
-
-
-
-
-
-
         button.setOnClickListener() {
             sum += 1
-             message = getString(R.string.button_pressed, sum, sum)
+            message = getString(R.string.button_pressed, sum, sum)
             myTextView.setText("""$message  $sum veces""")//concadeno la variable que va sumando
             //myTextView.text= message
         }
@@ -87,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
 
-        outState.putString("textView",message)
+        outState.putString("textView", message)
 
         super.onSaveInstanceState(outState, outPersistentState)
 
@@ -95,31 +83,29 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
-
     override fun onStart() {
         super.onStart()
-       Log.e("main activity","onStart")
+        Log.e("main activity", "onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.e("main activity","onResume")
+        Log.e("main activity", "onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.e("main activity","onPause")
+        Log.e("main activity", "onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.e("main activity","onStop")
+        Log.e("main activity", "onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.e("main activity","onDestroy")
+        Log.e("main activity", "onDestroy")
     }
 }
 
