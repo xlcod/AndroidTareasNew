@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var myTextView: TextView
     private lateinit var movieButton: Button
     private lateinit var message: String
+    private lateinit var recycleButton: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         myTextView = findViewById<TextView>(R.id.textView)
         profileButton = findViewById(R.id.myProfile)
         movieButton = findViewById<Button>(R.id.myMovies)
+        recycleButton = findViewById<Button>(R.id.recycleButton)
         var sum = 0
 
         profileButton.setOnClickListener {
@@ -48,6 +50,19 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+
+        recycleButton.setOnClickListener{
+            val intent = Intent(this, MovieListActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
+
+
+
+
 
         movieButton.setOnClickListener {
             val intent = Intent(this, MovieDetailActivity::class.java)

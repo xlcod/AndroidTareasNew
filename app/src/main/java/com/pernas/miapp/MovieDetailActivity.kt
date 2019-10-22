@@ -13,9 +13,9 @@ import kotlinx.android.synthetic.main.activity_movie_detail.*
 class MovieDetailActivity : AppCompatActivity() {
 
 
-    val myApiMovies = listOf<MovieDataApi>(MovieDataApi(3, "Red dead ", 2, "1978", "Funny", 6.0))
-    val myApiMovies1 = listOf<MovieDataApi>(MovieDataApi(3, "Red dead ", 2, "1978", "Funny", 6.0))
-    val myApiMovies2 = listOf<MovieDataApi>(MovieDataApi(3, "Red dead ", 2, "1978", "Funny", 6.0))
+    val myApiMovies = listOf<MovieDataApi>(MovieDataApi(3, "Red dead ", "4", "1978", "Funny", 6.0))
+    val myApiMovies1 = listOf<MovieDataApi>(MovieDataApi(3, "Red dead ", "4", "1978", "Funny", 6.0))
+    val myApiMovies2 = listOf<MovieDataApi>(MovieDataApi(3, "Red dead ", "6", "1978", "Funny", 6.0))
 
 
     val movie = Movie(
@@ -41,7 +41,7 @@ class MovieDetailActivity : AppCompatActivity() {
             idDescription.text = description
             idRating.text = rating.toString()
         }
-        Picasso.get().load("https://i.ytimg.com/vi/4Bvdp94K1uU/maxresdefault.jpg").into(imageView);
+        Picasso.get().load("https://i.ytimg.com/vi/4Bvdp94K1uU/maxresdefault.jpg").into(imageViewMovie);
 
     }
 
