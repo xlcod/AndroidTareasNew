@@ -8,31 +8,31 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var profileButton: Button
-    private lateinit var button: Button
+
     private lateinit var myTextView: TextView
-    private lateinit var movieButton: Button
     private lateinit var message: String
-    private lateinit var recycleButton: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val navController = findNavController(R.id.mainFragment)
 
-        button = findViewById<Button>(R.id.myButton)
-        myTextView = findViewById<TextView>(R.id.textView)
-        profileButton = findViewById(R.id.myProfile)
-        movieButton = findViewById<Button>(R.id.myMovies)
-        recycleButton = findViewById<Button>(R.id.recycleButton)
-        var sum = 0
 
-        profileButton.setOnClickListener {
+        val appBarNavigation = AppBarConfiguration(setOf(R.id.profileFragment))
+        setupActionBarWithNavController(navController,appBarNavigation)
+        bottomNavView.setupWithNavController(navController)
+
+        /*profileButton.setOnClickListener {
             val intent = Intent(this, ProfileActivity::class.java)
             intent.putExtra("riderName", "Brandom semenuk")
             intent.putExtra("birth_date", " 15/15/92")
@@ -49,22 +49,17 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
 
-        }
+        }*/
 
 
-        recycleButton.setOnClickListener{
+        /*recycleButton.setOnClickListener{
             val intent = Intent(this, MovieListActivity::class.java)
             startActivity(intent)
 
-        }
+        }*/
 
 
-
-
-
-
-
-        movieButton.setOnClickListener {
+        /* movieButton.setOnClickListener {
             val intent = Intent(this, MovieDetailActivity::class.java)
             /*intent.putExtra("title","Revel in the chaos")
             intent.putExtra("genre", "Sports")
@@ -77,50 +72,17 @@ class MainActivity : AppCompatActivity() {
                     " semper mi ac erat faucibus, vitae congue ante malesuada. " +
                     "Integer sagittis eu odio a fringilla. ")*/
             startActivity(intent)
-        }
+        }*/
 
-        button.setOnClickListener() {
+        /* button.setOnClickListener() {
             sum += 1
             message = getString(R.string.button_pressed, sum, sum)
             myTextView.setText("""$message  $sum veces""")//concadeno la variable que va sumando
             //myTextView.text= message
         }
-    }
+    }*/
 
 
-    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
-
-        outState.putString("textView", message)
-
-        super.onSaveInstanceState(outState, outPersistentState)
-
-
-    }
-
-
-    override fun onStart() {
-        super.onStart()
-        Log.e("main activity", "onStart")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.e("main activity", "onResume")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.e("main activity", "onPause")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.e("main activity", "onStop")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.e("main activity", "onDestroy")
     }
 }
 
