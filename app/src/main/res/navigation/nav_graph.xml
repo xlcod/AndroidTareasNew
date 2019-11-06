@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/profileFragment">
 
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.pernas.miapp.profileFragment"
+        android:name="com.pernas.miapp.ui.Profile.profileFragment"
         android:label="profileFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.pernas.miapp.ui.MovieSearch.searchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.pernas.miapp.ui.Favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
 </navigation>

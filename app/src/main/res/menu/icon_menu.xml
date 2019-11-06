@@ -3,15 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/third"
+        android:id="@+id/favoritesFragment"
         android:icon="@android:drawable/btn_star_big_off"
-        android:title="primero" />
+        android:title="Favorites" />
     <item
-        android:id="@+id/second"
+        android:id="@+id/searchFragment"
         android:icon="@android:drawable/ic_menu_search"
-        android:title="segundo" />
+        android:title="Search" />
     <item
-        android:id="@+id/first"
+        android:id="@+id/profileFragment"
         android:icon="@android:drawable/ic_menu_my_calendar"
-        android:title="tercero" />
+        android:title="Profile" />
 </menu>
