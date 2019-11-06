@@ -31,7 +31,7 @@ class MovieSearchPresenter(val view: MovieSearchView) {
         }
     }
 
-    fun cityClicked(Movie: MovieDataClass) {
+    fun movieClicked(Movie: MovieDataClass) {
         view.openMovieDetail(Movie.id)
     }
 }

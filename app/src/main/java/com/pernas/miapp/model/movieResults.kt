@@ -49,7 +49,7 @@ data class movieResults (
 }
 
 data class MoviesDetailReponse(
-    val moviesDetailReponse: List<MovieDetail>
+    val moviesDetailResponse: List<MovieDetail>
 )
 
 

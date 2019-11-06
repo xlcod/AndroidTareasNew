@@ -1,5 +1,6 @@
 package com.pernas.miapp.ui.MovieSearch
 
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,6 +28,8 @@ class CitiesAdapter(private val listener: (MovieDataClass) -> Unit) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(Movies[position], listener)
+
+
     }
 
     class ViewHolder private constructor(view: View) : RecyclerView.ViewHolder(view) {

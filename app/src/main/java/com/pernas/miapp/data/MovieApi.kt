@@ -21,8 +21,8 @@ interface MovieApi {
 
     //query details
     //https://api.themoviedb.org/3/movie/5?api_key=77335f53286ea3ce074ab21558a8fd05
-    @GET("/movie/")
-    suspend fun getCityDetail(@Path("id") movieId: Int?): Response<MoviesDetailReponse>
+    @GET("movie/{movieId}")
+    suspend fun getCityDetail(@Path("movieId") movieId: Int, @Query("api_key") term2: String): Response<MoviesDetailReponse>
 
 }
 

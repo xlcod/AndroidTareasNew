@@ -11,20 +11,17 @@ import kotlinx.coroutines.withContext
 
 class MovieDetailPresenter (val view: MovieDetailView) {
 
-    fun fetchCityDetail(cityId: Int) {
+    fun fetchCityDetail(movieId: Int) {
         val weatherApi = RetrofitFactory.getWeatherApi()
         CoroutineScope(Dispatchers.IO).launch {
-            val response = weatherApi.getCityDetail(cityId)
+            val response = weatherApi.getCityDetail(movieId, "77335f53286ea3ce074ab21558a8fd05")
             withContext(Dispatchers.Main) {
-                view.showWeatherDetail(response.body()!!.moviesDetailReponse)
+                view.showMovieDetail(response.body()!!.moviesDetailResponse)
             }
         }
+
     }
     interface MovieDetailView {
-        fun showWeatherDetail(detail: List<MovieDetail>)
+        fun showMovieDetail(detailList: List<MovieDetail>)
     }
-
-
-
-
 }

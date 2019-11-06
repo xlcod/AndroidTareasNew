@@ -15,31 +15,24 @@ import com.pernas.miapp.R
 import com.pernas.miapp.R.id.searchViewFragment
 import com.pernas.miapp.data.RetrofitFactory
 import com.pernas.miapp.model.MovieDataClass
-import com.pernas.miapp.ui.MovieDetail.detailsMovieFragment
+import com.pernas.miapp.ui.MovieDetail.MovieDetailActivity
+
 import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_search.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import android.R
-import android.R
-import android.R
+
+
 import kotlinx.android.synthetic.main.fragment_details_movie.view.*
-import android.R
-import android.R
-
-
-
-
-
 
 /**
  * A simple [Fragment] subclass.
  */
 class searchFragment : Fragment(), MovieSearchView {
 
-    lateinit var si: RecyclerView
+    lateinit var myRecyclerView: RecyclerView
 
     lateinit var miSearch: SearchView
 
@@ -55,19 +48,9 @@ class searchFragment : Fragment(), MovieSearchView {
     }
 
     override fun openMovieDetail(id: Int) {
-        val intent = Intent(getActivity(), detailsMovieFragment::class.java)
-        //intent.putExtra("city_id")
-        val newGamefragment = GameSettingsFragment()
-        val transaction = fragmentManager!!.beginTransaction()
-        transaction.replace(
-            com.pernas.miapp.R.id.content_frame,
-            someFragment(com.pernas.miapp.R.id.details_frament)
-        ) // give your fragment container id in first parameter
-        transaction.addToBackStack(null)  // if written, this transaction will be added to backstack
-        transaction.commit()
-
-
-
+        val intent = Intent(this.context, MovieDetailActivity::class.java)
+        intent.putExtra("movie_id", id)
+        startActivity(intent)
     }
 
     
@@ -88,9 +71,9 @@ class searchFragment : Fragment(), MovieSearchView {
         savedInstanceState: Bundle?
     ): View? {
 
-        val view = inflater.inflate(R.layout.fragment_search, container, false)
+        val view = inflater.inflate(com.pernas.miapp.R.layout.fragment_search, container, false)
 
-        miSearch = view.findViewById(R.id.searchViewFragment)
+        miSearch = view.findViewById(com.pernas.miapp.R.id.searchViewFragment)
 
         miSearch.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextChange(newText: String?): Boolean {
@@ -114,20 +97,24 @@ class searchFragment : Fragment(), MovieSearchView {
 
         })
 
-        si = view.findViewById(R.id.MoviesRecyclerView)
+        myRecyclerView = view.findViewById(com.pernas.miapp.R.id.MoviesRecyclerView)
 
         val presenter = MovieSearchPresenter(this)
 
-        si.layoutManager = LinearLayoutManager(this.context)
-        si.setHasFixedSize(true)
+        myRecyclerView.layoutManager = LinearLayoutManager(this.context)
+        myRecyclerView.setHasFixedSize(true)
         citiesAdapter = CitiesAdapter {
-            presenter.cityClicked(it)
+            presenter.movieClicked(it)
         }
-        si.adapter = citiesAdapter
+        myRecyclerView.adapter = citiesAdapter
 
         return view
     }
 
+
+}
+
+private fun Intent.putExtra(s: String) {
 
 }
 
