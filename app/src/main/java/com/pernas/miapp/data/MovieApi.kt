@@ -1,10 +1,7 @@
 package com.pernas.miapp.data
 
 
-import com.pernas.miapp.model.Movie
-import com.pernas.miapp.model.MovieDataClass
-import com.pernas.miapp.model.MoviesDetailReponse
-import com.pernas.miapp.model.movieResults
+import com.pernas.miapp.model.*
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -22,7 +19,7 @@ interface MovieApi {
     //query details
     //https://api.themoviedb.org/3/movie/5?api_key=77335f53286ea3ce074ab21558a8fd05
     @GET("movie/{movieId}")
-    suspend fun getCityDetail(@Path("movieId") movieId: Int, @Query("api_key") term2: String): Response<MoviesDetailReponse>
+    suspend fun getCityDetail(@Path("movieId") movieId: Int, @Query("api_key") term2: String): Response<MovieDetail>
 
 }
 

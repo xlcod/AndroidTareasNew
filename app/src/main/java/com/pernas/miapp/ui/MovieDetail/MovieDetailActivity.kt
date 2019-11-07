@@ -14,8 +14,8 @@ import kotlinx.coroutines.withContext
 import kotlin.math.log
 
 class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetailView {
-    override fun showMovieDetail(detail: List<MovieDetail>) {
-        Log.e("Pasado", detail.toString())
+    override fun showMovieDetail(detailList: MovieDetail) {
+        //Log.e("Pasado", detail.toString())
 
     }
 

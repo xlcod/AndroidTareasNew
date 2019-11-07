@@ -58,6 +58,6 @@ data class MovieDetail(
     val title: String,
     val vote_average: String,
     val overview: String,
-    val releaseDate: String
+    val release_Date: String
 
 )
