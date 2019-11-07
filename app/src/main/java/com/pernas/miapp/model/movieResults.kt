@@ -1,8 +1,8 @@
 package com.pernas.miapp.model
 
-data class movieResults (
+data class movieResults(
 
-     val results: List<MovieDataClass>
+    val results: List<MovieDataClass>
 ) : List<MovieDataClass> {
     override val size: Int
         get() = TODO("not implemented") //To change initializer of created properties use File | Settings | File Templates.
@@ -52,12 +52,15 @@ data class MoviesDetailReponse(
     val moviesDetailResponse: List<MovieDetail>
 )
 
-
-
 data class MovieDetail(
     val title: String,
     val vote_average: String,
     val overview: String,
-    val release_Date: String
+    val release_date: String,
+    val backdrop_path: String,
+    val genres: List<genresList>
+)
 
+data class genresList(
+    val name: String
 )

@@ -12,12 +12,11 @@ import retrofit2.http.Query
 
 interface MovieApi {
 
-    //query serach
+    //query search
     @GET("search/movie/")
-    suspend fun searchCities(@Query("api_key") term: String,@Query("query") term2: String): Response<movieResults>
+    suspend fun searchCities(@Query("api_key") term: String, @Query("query") term2: String): Response<movieResults>
 
     //query details
-    //https://api.themoviedb.org/3/movie/5?api_key=77335f53286ea3ce074ab21558a8fd05
     @GET("movie/{movieId}")
     suspend fun getCityDetail(@Path("movieId") movieId: Int, @Query("api_key") term2: String): Response<MovieDetail>
 

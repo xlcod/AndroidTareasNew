@@ -3,7 +3,7 @@ package com.pernas.miapp.ui.MovieSearch
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
+
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -11,13 +11,12 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.pernas.miapp.R
-import com.pernas.miapp.R.id.searchViewFragment
+
 import com.pernas.miapp.data.RetrofitFactory
 import com.pernas.miapp.model.MovieDataClass
 import com.pernas.miapp.ui.MovieDetail.MovieDetailActivity
 
-import kotlinx.android.synthetic.*
+
 import kotlinx.android.synthetic.main.fragment_search.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -36,15 +35,12 @@ class searchFragment : Fragment(), MovieSearchView {
 
     lateinit var miSearch: SearchView
 
-    lateinit var buscado: CharSequence
-
     lateinit var movieName: String
 
     override fun showCities(movies: List<MovieDataClass>) {
 
         citiesAdapter.addCities(movies)
         MoviesRecyclerView.visibility = View.VISIBLE
-        //emptyView.visibility = View.GONE
     }
 
     override fun openMovieDetail(id: Int) {
@@ -53,14 +49,10 @@ class searchFragment : Fragment(), MovieSearchView {
         startActivity(intent)
     }
 
-    
-
     override fun showError() {
-
     }
 
     override fun showEmpty() {
-
     }
 
     lateinit var citiesAdapter: CitiesAdapter
@@ -110,23 +102,4 @@ class searchFragment : Fragment(), MovieSearchView {
 
         return view
     }
-
-
 }
-
-private fun Intent.putExtra(s: String) {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

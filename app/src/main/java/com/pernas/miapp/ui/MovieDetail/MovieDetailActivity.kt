@@ -6,6 +6,8 @@ import android.util.Log
 import com.pernas.miapp.R
 import com.pernas.miapp.data.RetrofitFactory
 import com.pernas.miapp.model.MovieDetail
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.fragment_details_movie.*
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +17,17 @@ import kotlin.math.log
 
 class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetailView {
     override fun showMovieDetail(detailList: MovieDetail) {
-        //Log.e("Pasado", detail.toString())
+        Log.e("Pasado", detailList.toString())
+
+        movieTitle.text = detailList.title
+        movieDetailYear.text = detailList.release_date
+        movieDetailDescription.text = detailList.overview
+        movieDetailRating.text = detailList.vote_average
+        //movieDetailGenre(detailList.genres.map { it.name })
+        val photo = "https://image.tmdb.org/t/p/w500" + detailList.backdrop_path
+        Picasso.get().load(photo).placeholder(R.drawable.ic_launcher_background)
+            .error(R.drawable.ic_launcher_foreground).into(imageViewMovie)
+
 
     }
 
@@ -24,23 +36,12 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
         setContentView(R.layout.fragment_details_movie)
 
         val MovieId = intent.extras?.getInt("movie_id")
-
-        Log.e("id_recibido", "$MovieId")
-
-
         val presenter = MovieDetailPresenter(this)
         presenter.fetchCityDetail(MovieId!!)
 
+    }
 
-        val weatherApi = RetrofitFactory.getWeatherApi()
-        /*CoroutineScope(Dispatchers.IO).launch {
-            val response =
-                weatherApi.getCityDetail(MovieId, "77335f53286ea3ce074ab21558a8fd05")
-            withContext(Dispatchers.Main) {
-                response.body()?.moviesDetailResponse!!
-            }
-        }*/
-
-
+    fun movieDetailGenre(detailList: MovieDetail, pasado: String) {
+        //movieDetailGenre.text=detailList.genres
     }
 }

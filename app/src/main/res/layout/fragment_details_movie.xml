@@ -10,13 +10,13 @@
 
     <ImageView
         android:id="@+id/imageViewMovie"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="200dp"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
+        android:src="@drawable/foto2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/foto2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/movieTitle"
@@ -26,6 +26,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
         app:layout_constraintEnd_toStartOf="@+id/movieDetailRating"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
