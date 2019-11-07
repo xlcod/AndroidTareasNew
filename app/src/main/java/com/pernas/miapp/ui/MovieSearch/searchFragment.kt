@@ -23,9 +23,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-
-import kotlinx.android.synthetic.main.fragment_details_movie.view.*
-
 /**
  * A simple [Fragment] subclass.
  */
@@ -39,7 +36,7 @@ class searchFragment : Fragment(), MovieSearchView {
 
     override fun showCities(movies: List<MovieDataClass>) {
 
-        citiesAdapter.addCities(movies)
+        moviesAdapter.addMovies(movies)
         MoviesRecyclerView.visibility = View.VISIBLE
     }
 
@@ -55,7 +52,7 @@ class searchFragment : Fragment(), MovieSearchView {
     override fun showEmpty() {
     }
 
-    lateinit var citiesAdapter: CitiesAdapter
+    lateinit var moviesAdapter: MoviesAdapter
 
 
     override fun onCreateView(
@@ -76,12 +73,12 @@ class searchFragment : Fragment(), MovieSearchView {
                 if (query != null) {
                     movieName = query
                 }
-                val weatherApi = RetrofitFactory.getWeatherApi()
+                val weatherApi = RetrofitFactory.getMovieDbApi()
                 CoroutineScope(Dispatchers.IO).launch {
                     val response =
-                        weatherApi.searchCities("77335f53286ea3ce074ab21558a8fd05", movieName)
+                        weatherApi.searchMovies("77335f53286ea3ce074ab21558a8fd05", movieName)
                     withContext(Dispatchers.Main) {
-                        citiesAdapter.addCities(response.body()?.results!!)
+                        moviesAdapter.addMovies(response.body()?.results!!)
                     }
                 }
                 return false
@@ -95,10 +92,10 @@ class searchFragment : Fragment(), MovieSearchView {
 
         myRecyclerView.layoutManager = LinearLayoutManager(this.context)
         myRecyclerView.setHasFixedSize(true)
-        citiesAdapter = CitiesAdapter {
+        moviesAdapter = MoviesAdapter {
             presenter.movieClicked(it)
         }
-        myRecyclerView.adapter = citiesAdapter
+        myRecyclerView.adapter = moviesAdapter
 
         return view
     }

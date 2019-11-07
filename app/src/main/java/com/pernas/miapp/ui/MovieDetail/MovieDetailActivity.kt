@@ -6,6 +6,7 @@ import android.util.Log
 import com.pernas.miapp.R
 import com.pernas.miapp.data.RetrofitFactory
 import com.pernas.miapp.model.MovieDetail
+import com.pernas.miapp.model.genresList
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_details_movie.*
 
@@ -23,12 +24,10 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
         movieDetailYear.text = detailList.release_date
         movieDetailDescription.text = detailList.overview
         movieDetailRating.text = detailList.vote_average
-        //movieDetailGenre(detailList.genres.map { it.name })
+        //movieDetailGenre(detailList.genres.map{it.name})
         val photo = "https://image.tmdb.org/t/p/w500" + detailList.backdrop_path
         Picasso.get().load(photo).placeholder(R.drawable.ic_launcher_background)
             .error(R.drawable.ic_launcher_foreground).into(imageViewMovie)
-
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,11 +36,11 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
 
         val MovieId = intent.extras?.getInt("movie_id")
         val presenter = MovieDetailPresenter(this)
-        presenter.fetchCityDetail(MovieId!!)
+        presenter.fetchMovieDetail(MovieId!!)
 
     }
 
-    fun movieDetailGenre(detailList: MovieDetail, pasado: String) {
-        //movieDetailGenre.text=detailList.genres
+    fun movieDetailGenre(name: genresList) {
+        movieDetailGenre.text=name.name
     }
 }

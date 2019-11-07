@@ -14,11 +14,11 @@ interface MovieApi {
 
     //query search
     @GET("search/movie/")
-    suspend fun searchCities(@Query("api_key") term: String, @Query("query") term2: String): Response<movieResults>
+    suspend fun searchMovies(@Query("api_key") term: String, @Query("query") term2: String): Response<movieResults>
 
     //query details
     @GET("movie/{movieId}")
-    suspend fun getCityDetail(@Path("movieId") movieId: Int, @Query("api_key") term2: String): Response<MovieDetail>
+    suspend fun getMovieDetail(@Path("movieId") movieId: Int, @Query("api_key") term2: String): Response<MovieDetail>
 
 }
 
@@ -26,7 +26,7 @@ interface MovieApi {
 object RetrofitFactory {
     const val BASE_URL = "https://api.themoviedb.org/3/"
 
-    fun getWeatherApi(): MovieApi {
+    fun getMovieDbApi(): MovieApi {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(MoshiConverterFactory.create())

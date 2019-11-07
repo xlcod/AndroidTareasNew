@@ -13,17 +13,15 @@ import kotlinx.coroutines.withContext
 
 class MovieDetailPresenter(val view: MovieDetailView) {
 
-    fun fetchCityDetail(movieId: Int) {
-        val weatherApi = RetrofitFactory.getWeatherApi()
+    fun fetchMovieDetail(movieId: Int) {
+        val movieDbApi = RetrofitFactory.getMovieDbApi()
         CoroutineScope(Dispatchers.IO).launch {
-            val response = weatherApi.getCityDetail(movieId, "77335f53286ea3ce074ab21558a8fd05")
+            val response = movieDbApi.getMovieDetail(movieId, "77335f53286ea3ce074ab21558a8fd05")
             withContext(Dispatchers.Main) {
                 if (response.isSuccessful) {
-                    val movies = response.body()!!
-
                     view.showMovieDetail(response.body()!!)
                 } else {
-
+                    Log.e("MovieDetailPresenter","Call failed")
                 }
             }
         }

@@ -12,10 +12,10 @@ class MovieSearchPresenter(val view: MovieSearchView) {
     fun searchClicked(searchTerm: String) {
         if (searchTerm.isEmpty()) return
 
-        val weatherApi = RetrofitFactory.getWeatherApi()
+        val weatherApi = RetrofitFactory.getMovieDbApi()
         CoroutineScope(Dispatchers.IO).launch {
             val response =
-                weatherApi.searchCities("77335f53286ea3ce074ab21558a8fd05", "Scary Movie")
+                weatherApi.searchMovies("77335f53286ea3ce074ab21558a8fd05", "Scary Movie")
             withContext(Dispatchers.Main) {
                 if (response.isSuccessful) {
                     val movies = response.body()!!

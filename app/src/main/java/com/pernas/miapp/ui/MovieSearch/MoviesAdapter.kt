@@ -10,13 +10,13 @@ import com.pernas.miapp.R
 import com.pernas.miapp.model.MovieDataClass
 
 
-class CitiesAdapter(private val listener: (MovieDataClass) -> Unit) :
-    RecyclerView.Adapter<CitiesAdapter.ViewHolder>() {
+class MoviesAdapter(private val listener: (MovieDataClass) -> Unit) :
+    RecyclerView.Adapter<MoviesAdapter.ViewHolder>() {
 
     private var Movies = listOf<MovieDataClass>()
 
-    fun addCities(newCities: List<MovieDataClass>) {
-        this.Movies = newCities
+    fun addMovies(newMovies: List<MovieDataClass>) {
+        this.Movies = newMovies
         notifyDataSetChanged()
     }
 
@@ -31,11 +31,11 @@ class CitiesAdapter(private val listener: (MovieDataClass) -> Unit) :
     }
 
     class ViewHolder private constructor(view: View) : RecyclerView.ViewHolder(view) {
-        private val cityTxt = view.findViewById<TextView>(R.id.MovieTextView)
+        private val movieTxt = view.findViewById<TextView>(R.id.MovieTextView)
 
-        fun bind(city: MovieDataClass, listener: (MovieDataClass) -> Unit) {
-            cityTxt.text = city.title
-            this.itemView.setOnClickListener { listener.invoke(city) }
+        fun bind(myMovies: MovieDataClass, listener: (MovieDataClass) -> Unit) {
+            movieTxt.text = myMovies.title
+            this.itemView.setOnClickListener { listener.invoke(myMovies) }
         }
 
         companion object {
