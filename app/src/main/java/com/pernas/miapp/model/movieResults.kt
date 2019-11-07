@@ -51,6 +51,10 @@ data class movieResults(
 data class MoviesDetailReponse(
     val moviesDetailResponse: List<MovieDetail>
 )
+data class genresList(
+    val name: String
+)
+
 
 data class MovieDetail(
     val title: String,
@@ -61,6 +65,3 @@ data class MovieDetail(
     val genres: List<genresList>
 )
 
-data class genresList(
-    val name: String
-)

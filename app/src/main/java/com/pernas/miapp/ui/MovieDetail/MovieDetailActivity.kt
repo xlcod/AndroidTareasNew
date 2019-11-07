@@ -24,7 +24,7 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
         movieDetailYear.text = detailList.release_date
         movieDetailDescription.text = detailList.overview
         movieDetailRating.text = detailList.vote_average
-        //movieDetailGenre(detailList.genres.map{it.name})
+        //movieDetailGenre(detailList.genres.map {it.name})
         val photo = "https://image.tmdb.org/t/p/w500" + detailList.backdrop_path
         Picasso.get().load(photo).placeholder(R.drawable.ic_launcher_background)
             .error(R.drawable.ic_launcher_foreground).into(imageViewMovie)
