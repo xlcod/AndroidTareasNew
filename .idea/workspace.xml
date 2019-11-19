@@ -11,14 +11,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5f0cf3d-ba89-4895-866b-83d48f8257a4" name="Default Changelist" comment="casi terminado limpieza hecha">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_common_2_2_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_ktx_2_2_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_room_room_runtime_2_2_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_2_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_sqlite_sqlite_framework_2_0_1_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_3_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/AppDatabase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/MovieData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/MoviesDao.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieFavDataClass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesPresenter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Profile/profilePresenter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/favorite_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/movieResults.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/movieResults.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_1_1_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_1_3_0_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_common_1_1_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailPresenter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailPresenter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details_movie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_details_movie.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,19 +85,68 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailPresenter.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="279">
+              <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+              <folding>
+                <element signature="e#37#330#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/movieResults.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_item.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="147">
+              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+              <folding>
+                <element signature="e#40#577#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesPresenter.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding>
+                <element signature="e#39#152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="25" column="131" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="131" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/searchFragment.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="90" column="49" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="49" />
+              <folding>
+                <element signature="e#42#721#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,46 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MoviesAdapter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailActivity.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_details_movie.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/searchFragment.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="43" column="74" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="74" />
+            <state relative-caret-position="703">
+              <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -122,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MovieSearchPresenter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            <state relative-caret-position="-82">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="52" />
               <folding>
                 <element signature="e#41#280#0" expanded="true" />
               </folding>
@@ -132,10 +173,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Profile/profileFragment.kt">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/MovieData.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
-              <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="95">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieFavDataClass.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -145,12 +195,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
         <option value="resourceFile" />
         <option value="navigationResourceFile" />
         <option value="layoutResourceFile" />
-        <option value="Kotlin Class" />
+        <option value="layoutResourceFile_vertical" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -165,10 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/Movie.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ProfileActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/strings_item.xml" />
@@ -188,37 +235,46 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/profileFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/icon_menu.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/searchFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Movie.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/MovieAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/MainActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/Results.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Profile/profileFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/movie_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieDataApi.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_details_movie.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/CitiesAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/MovieApi.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MovieSearchPresenter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MovieAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/CitiesAdapter2.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailPresenter.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/searchFragment.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MoviesAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/movieResults.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/searchFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/favorite_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieFavDataClass.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Profile/profileAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_details_movie.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailPresenter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/MovieData.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/AppDatabase.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/MoviesDao.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesPresenter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesFragment.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1938" />
-    <option name="height" value="1098" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1939" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -226,6 +282,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -237,8 +295,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
@@ -300,6 +356,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="miapp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miApp2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="miapp" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -351,17 +418,6 @@
               <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="miapp" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="Profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miApp2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="res" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -373,24 +429,6 @@
               <item name="res" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="miApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miApp2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miApp2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="navigation" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -398,9 +436,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2019-11-18T22:36:53.018Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
@@ -409,11 +449,11 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\java\com\pernas\miapp\ui" />
-      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\java\com\pernas\miapp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\java\com\pernas\miapp\model" />
+      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\res" />
       <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\res\drawable" />
-      <recent name="E:\AndroidStudio\Proyects\app\src\main\res\drawable" />
+      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\res\values-es" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="com.pernas.miapp" />
@@ -432,11 +472,12 @@
       <recent name="com.pernas.miapp.ui" />
       <recent name="com.pernas.miapp" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\java\com\pernas\miapp\model" />
-      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\res" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\java\com\pernas\miapp\ui\Favorites" />
+      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\java\com\pernas\miapp\ui" />
+      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\java\com\pernas\miapp" />
       <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\res\drawable" />
-      <recent name="C:\Users\freer\AndroidStudioProjects\miApp2\app\src\main\res\values-es" />
+      <recent name="E:\AndroidStudio\Proyects\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -560,7 +601,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22283609" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22099447" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -568,17 +609,17 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" weight="0.3290362" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.3597561" />
+      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.5487805" />
       <window_info anchor="bottom" id="Logcat" order="1" sideWeight="0.49946696" weight="0.73170733" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5015347" side_tool="true" weight="0.13902439" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.036585364" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49846533" visible="true" weight="0.13902439" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49846533" weight="0.30487806" />
       <window_info anchor="bottom" id="Android Profiler" order="8" weight="0.32936078" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
-      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.33048782" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3292683" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -599,35 +640,16 @@
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item_list.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MyItemRecyclerViewAdapter.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/ItemFragment.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/filacustom.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_movie_list2.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/activity_movie_list.kt" />
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-29/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="948" column="18" selection-start-line="948" selection-start-column="18" selection-end-line="948" selection-end-column="18" />
-          <folding>
-            <element signature="e#45018#45019#0" expanded="true" />
-            <element signature="e#45048#45049#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_menu.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/buttonFragment.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_button.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml">
+      <provider selected="true" editor-type-id="nav-designer" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="nav-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/MovieDetailActivity.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ProfileActivity.kt" />
@@ -641,40 +663,13 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/MovieListActivity.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_movie_detail.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_movie_list.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/string_item.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MoviesAdapter.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Movie.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" column="13" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/icon_menu.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
@@ -694,29 +689,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/detailsMovieFragment.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2033">
-          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/MainActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
@@ -726,59 +698,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieDataApi.kt" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieDataClass.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MovieAdapter.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/CitiesAdapter2.kt" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.71828/41874e20a4d17fd4ad2052ac217073e14d00c910/picasso-2.71828-sources.jar!/com/squareup/picasso/Picasso.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MovieAdapter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/CitiesAdapter2.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/MovieApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/Movie.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/searchFragment.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="43" column="74" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailPresenter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="209">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -790,56 +715,227 @@
       </provider>
       <provider selected="true" editor-type-id="android-designer2" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Profile/profilePresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_details_movie.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="126" column="39" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/com/pernas/miapp/data/Local/MovieData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/MovieApi.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="112" selection-start-line="20" selection-start-column="112" selection-end-line="20" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/Movie.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/movieResults.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="58" column="11" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/AppDatabase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#37#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailPresenter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieDataClass.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/MoviesDao.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#37#116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/favorite_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Profile/profileFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2299">
+          <caret line="121" column="13" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2033">
+          <caret line="107" column="35" selection-start-line="107" selection-start-column="35" selection-end-line="107" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favorites.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/data/Local/MovieData.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/MovieFavDataClass.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="83" selection-start-line="2" selection-start-column="83" selection-end-line="2" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/movie_item.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MoviesAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="703">
+          <caret line="43" column="77" selection-start-line="43" selection-start-column="77" selection-end-line="43" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/searchFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="90" column="49" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="49" />
+          <folding>
+            <element signature="e#42#721#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieSearch/MovieSearchPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        <state relative-caret-position="-82">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="52" />
           <folding>
             <element signature="e#41#280#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Profile/profileFragment.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesAdapter.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="279">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+          <folding>
+            <element signature="e#37#330#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_details_movie.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="54" column="20" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/model/movieResults.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="61" column="25" lean-forward="true" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.71828/41874e20a4d17fd4ad2052ac217073e14d00c910/picasso-2.71828-sources.jar!/com/squareup/picasso/Picasso.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesPresenter.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#39#152#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/MovieDetail/MovieDetailActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+        <state relative-caret-position="190">
+          <caret line="25" column="131" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/pernas/miapp/ui/Favorites/FavoritesFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#40#577#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

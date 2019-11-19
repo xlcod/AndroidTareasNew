@@ -20,6 +20,7 @@ class MovieDetailPresenter(val view: MovieDetailView) {
             withContext(Dispatchers.Main) {
                 if (response.isSuccessful) {
                     view.showMovieDetail(response.body()!!)
+                    view.sendFavorites(response.body()!!,movieId)
                 } else {
                     Log.e("MovieDetailPresenter","Call failed")
                 }
@@ -29,5 +30,6 @@ class MovieDetailPresenter(val view: MovieDetailView) {
 
     interface MovieDetailView {
         fun showMovieDetail(detailList: MovieDetail)
+        fun sendFavorites(detailList: MovieDetail,movieid: Int)
     }
 }

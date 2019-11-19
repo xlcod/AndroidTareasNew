@@ -3,20 +3,43 @@ package com.pernas.miapp.ui.MovieDetail
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import com.pernas.miapp.R
-import com.pernas.miapp.data.RetrofitFactory
+import com.pernas.miapp.data.Local.DatabaseFactory
+import com.pernas.miapp.data.Local.MovieData
 import com.pernas.miapp.model.MovieDetail
 import com.pernas.miapp.model.genresList
+import com.pernas.miapp.ui.Favorites.FavoritesPresenter
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_details_movie.*
-
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import kotlin.math.log
 
-class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetailView {
+class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetailView,FavoritesPresenter.Favorites {
+    override fun sendFavorites(detailList: MovieDetail,myMovieId: Int) {
+        favorites_icon.setOnClickListener {
+            val database = DatabaseFactory.get(this)
+            val moviesDao = database.moviesDao()
+            CoroutineScope(Dispatchers.IO).launch {
+                moviesDao.insert(MovieData(movie_id= myMovieId,title = detailList.title,year = detailList.release_date,rating = detailList.vote_average))
+                //moviesDao.nukeTable()
+
+                val myMovies = moviesDao.getAll()
+                withContext(Dispatchers.Main) {
+                    Log.e("Desde main", moviesDao.getAll().toString())
+                }
+            }
+        }
+    }
+
+    override fun openMovieDetail() {
+        val presenter = FavoritesPresenter(this)
+        presenter.openMovieDetail()
+
+    }
+
     override fun showMovieDetail(detailList: MovieDetail) {
         Log.e("Pasado", detailList.toString())
 
@@ -38,6 +61,7 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
         val presenter = MovieDetailPresenter(this)
         presenter.fetchMovieDetail(MovieId!!)
 
+        val favorites_icon = findViewById(R.id.favorites_icon) as ImageView
     }
 
     fun movieDetailGenre(name: genresList) {
