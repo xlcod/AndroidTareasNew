@@ -1,16 +1,45 @@
 package com.pernas.miapp.ui.Favorites
 
+import android.util.Log
+import com.pernas.miapp.data.Local.MovieData
+import com.pernas.miapp.data.Local.MoviefavoritesDao
+import com.pernas.miapp.model.MovieDataClass
 import com.pernas.miapp.ui.MovieDetail.MovieDetailActivity
 import com.pernas.miapp.ui.MovieSearch.MovieSearchView
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class FavoritesPresenter(val view: Favorites) {
-    fun openMovieDetail() {
+    fun updateFavorites(dao: MoviefavoritesDao) {
+        CoroutineScope(Dispatchers.IO).launch {
+            val title = dao.getAll()
+            Log.e("prueba", "$title")
+            withContext(Dispatchers.Main) {
+                view.showMyFavorites(title)
+            }
+        }
+    }
+
+    fun deleteDatabase(dao: MoviefavoritesDao) {
+        CoroutineScope(Dispatchers.IO).launch {
+            val title = dao.nukeTable()
+            Log.e("prueba", "$title")
+
+        }
 
     }
 
-
-    interface Favorites {
-        fun openMovieDetail()
-
+    fun movieClicked(favorites: MovieData) {
+        favorites.movie_id?.let { view.openMovieDetail(it) }
     }
 }
+
+
+interface Favorites {
+    fun showMyFavorites(listFav: List<MovieData>)
+    fun openMovieDetail(id: Int)
+
+}
+

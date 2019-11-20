@@ -8,15 +8,15 @@ import androidx.recyclerview.widget.RecyclerView
 import com.pernas.miapp.R
 import com.pernas.miapp.data.Local.MovieData
 import com.pernas.miapp.model.MovieDataClass
-import com.pernas.miapp.ui.MovieSearch.MoviesAdapter
 
-class FavoritesAdapter() : RecyclerView.Adapter<FavoritesAdapter.ViewHolder>() {
+
+class FavoritesAdapter(private val listener: (MovieData) -> Unit) : RecyclerView.Adapter<FavoritesAdapter.ViewHolder>() {
 
 
     private var favorites = listOf<MovieData>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavoritesAdapter.ViewHolder {
-       return ViewHolder.from(parent)
+        return ViewHolder.from(parent)
     }
 
     fun addMyFavorites(myFavorites: List<MovieData>) {
@@ -24,20 +24,25 @@ class FavoritesAdapter() : RecyclerView.Adapter<FavoritesAdapter.ViewHolder>() {
         notifyDataSetChanged()
     }
 
-    override fun getItemCount(): Int {
-       return   favorites.size
+    fun notifyDelete() {
+        notifyDataSetChanged()
     }
+
+    override fun getItemCount(): Int {
+        return favorites.size
+    }
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(favorites[position])
+        holder.bind(favorites[position],listener)
     }
 
 
     class ViewHolder private constructor(view: View) : RecyclerView.ViewHolder(view) {
         private val favoriteStringTxt = view.findViewById<TextView>(R.id.MovieTextView)
 
-        fun bind(myfavorites: MovieData) {
+        fun bind(myfavorites: MovieData,listener: (MovieData) -> Unit) {
             favoriteStringTxt.text = myfavorites.title
-            //this.itemView.setOnClickListener { listener.invoke(MovieData) }
+            this.itemView.setOnClickListener { listener.invoke(myfavorites) }
         }
 
         companion object {

@@ -9,7 +9,18 @@ import kotlinx.coroutines.withContext
 
 class MovieSearchPresenter(val view: MovieSearchView) {
 
-    fun searchClicked(searchTerm: String) {
+    fun movieClicked(Movie: MovieDataClass) {
+        view.openMovieDetail(Movie.id)
+    }
+}
+
+interface MovieSearchView {
+    fun showCities(movies: List<MovieDataClass>)
+    fun openMovieDetail(id: Int)
+    fun showError()
+    fun showEmpty()
+}
+/*fun searchClicked(searchTerm: String) {
         if (searchTerm.isEmpty()) return
 
         val weatherApi = RetrofitFactory.getMovieDbApi()
@@ -29,16 +40,4 @@ class MovieSearchPresenter(val view: MovieSearchView) {
                 }
             }
         }
-    }
-
-    fun movieClicked(Movie: MovieDataClass) {
-        view.openMovieDetail(Movie.id)
-    }
-}
-
-interface MovieSearchView {
-    fun showCities(movies: List<MovieDataClass>)
-    fun openMovieDetail(id: Int)
-    fun showError()
-    fun showEmpty()
-}
+    }*/

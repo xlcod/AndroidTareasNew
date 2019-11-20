@@ -5,7 +5,8 @@
     <item
         android:id="@+id/favoritesFragment"
         android:icon="@android:drawable/btn_star_big_off"
-        android:title="Favorites" />
+        android:title="Favorites"
+        />
     <item
         android:id="@+id/searchFragment"
         android:icon="@android:drawable/ic_menu_search"

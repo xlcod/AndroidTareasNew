@@ -7,7 +7,8 @@
     android:layout_gravity="center_horizontal"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    app:menu="@menu/icon_menu">
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

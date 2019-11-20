@@ -1,6 +1,7 @@
 package com.pernas.miapp.data.Local
 
 import androidx.room.Dao
+import androidx.room.Ignore
 import androidx.room.Insert
 import androidx.room.Query
 
@@ -9,6 +10,7 @@ interface MoviefavoritesDao {
 
     @Query("SELECT * FROM  MovieData")
     suspend fun getAll(): List<MovieData>
+
 
     @Insert
     suspend fun insert(movies: MovieData)
