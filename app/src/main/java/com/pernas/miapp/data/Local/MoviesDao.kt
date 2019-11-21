@@ -17,7 +17,4 @@ interface MoviefavoritesDao {
     @Query("DELETE FROM MovieData")
     suspend fun deleteTable()
 
-
-
-
 }

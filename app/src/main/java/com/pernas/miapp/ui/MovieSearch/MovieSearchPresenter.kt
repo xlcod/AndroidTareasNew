@@ -20,24 +20,3 @@ interface MovieSearchView {
     fun showError()
     fun showEmpty()
 }
-/*fun searchClicked(searchTerm: String) {
-        if (searchTerm.isEmpty()) return
-
-        val weatherApi = RetrofitFactory.getMovieDbApi()
-        CoroutineScope(Dispatchers.IO).launch {
-            val response =
-                weatherApi.searchMovies("77335f53286ea3ce074ab21558a8fd05", "Scary Movie")
-            withContext(Dispatchers.Main) {
-                if (response.isSuccessful) {
-                    val movies = response.body()!!
-                    if (movies.isEmpty()) {
-                        view.showEmpty()
-                        return@withContext
-                    }
-                    view.showCities(response.body()!!)
-                } else {
-                    view.showError()
-                }
-            }
-        }
-    }*/

@@ -33,7 +33,7 @@ class MoviesAdapter(private val listener: (MovieDataClass) -> Unit) :
     class ViewHolder private constructor(view: View) : RecyclerView.ViewHolder(view) {
         private val movieTxt = view.findViewById<TextView>(R.id.MovieTextView)
 
-            fun bind(myMovies: MovieDataClass, listener: (MovieDataClass) -> Unit) {
+        fun bind(myMovies: MovieDataClass, listener: (MovieDataClass) -> Unit) {
             movieTxt.text = myMovies.title
             this.itemView.setOnClickListener { listener.invoke(myMovies) }
         }

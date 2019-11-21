@@ -41,7 +41,6 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
                         "Added to favorites! :)",
                         Toast.LENGTH_SHORT
                     ).show()
-                    //Log.e("Desde main", moviesDao.getAll("Title").toString())
                 }
             }
         }
@@ -49,13 +48,10 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
 
 
     override fun showMovieDetail(detailList: MovieDetail) {
-        Log.e("Pasado", detailList.toString())
-
         movieTitle.text = detailList.title
         movieDetailYear.text = detailList.release_date
         movieDetailDescription.text = detailList.overview
         movieDetailRating.text = detailList.vote_average
-        //movieDetailGenre(detailList.genres.map {it.name})
         val photo = "https://image.tmdb.org/t/p/w500" + detailList.backdrop_path
         Picasso.get().load(photo).placeholder(R.drawable.ic_launcher_background)
             .error(R.drawable.ic_launcher_foreground).into(imageViewMovie)
@@ -65,14 +61,8 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_details_movie)
 
-        val MovieId = intent.extras?.getInt("movie_id")
+        val movieId = intent.extras?.getInt("movie_id")
         val presenter = MovieDetailPresenter(this)
-        presenter.fetchMovieDetail(MovieId!!)
-
-        val favorites_icon = findViewById(R.id.favorites_icon) as ImageView
-    }
-
-    fun movieDetailGenre(name: genresList) {
-        movieDetailGenre.text = name.name
+        presenter.fetchMovieDetail(movieId!!)
     }
 }

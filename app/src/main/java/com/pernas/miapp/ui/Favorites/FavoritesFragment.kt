@@ -3,15 +3,11 @@ package com.pernas.miapp.ui.Favorites
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-
 import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
-
 import com.pernas.miapp.data.Local.DatabaseFactory
 import com.pernas.miapp.data.Local.MovieData
 import com.pernas.miapp.ui.Profile.FavoritesAdapter
@@ -20,23 +16,25 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import android.view.MenuInflater
-import com.pernas.miapp.model.MovieDataClass
+import com.pernas.miapp.data.Local.LocalRepository.LocalRepository
+import com.pernas.miapp.data.Local.LocalRepository.PreferencesLocalRepository
 import com.pernas.miapp.ui.MovieDetail.MovieDetailActivity
-import com.pernas.miapp.ui.MovieSearch.MoviesAdapter
 
 
 /**
  * A simple [Fragment] subclass.
  */
 class FavoritesFragment : Fragment(), Favorites {
+
+    lateinit var favoritesAdapter: FavoritesAdapter
+    lateinit var myRecyclerView: RecyclerView
+
     override fun openMovieDetail(id: Int) {
         val intent = Intent(this.context, MovieDetailActivity::class.java)
         intent.putExtra("movie_id", id)
         startActivity(intent)
     }
 
-    lateinit var favoritesAdapter: FavoritesAdapter
-    lateinit var myRecyclerView: RecyclerView
 
     override fun showMyFavorites(listFav: List<MovieData>) {
         CoroutineScope(Dispatchers.IO).launch {
@@ -109,6 +107,7 @@ class FavoritesFragment : Fragment(), Favorites {
         val moviesDao = myDatabase.moviesDao()
         presenter.updateFavorites(moviesDao)
 
+        PreferencesLocalRepository(moviesDao)
 
         fun checkFavorites() {
             CoroutineScope(Dispatchers.IO).launch {
@@ -116,15 +115,7 @@ class FavoritesFragment : Fragment(), Favorites {
 
             }
         }
-
-
-
-
-
-
         return view
-
-
     }
 }
 
