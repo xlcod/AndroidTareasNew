@@ -3,6 +3,7 @@ package com.pernas.miapp.ui.Favorites
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -19,6 +20,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import android.view.MenuInflater
+import com.pernas.miapp.model.MovieDataClass
 import com.pernas.miapp.ui.MovieDetail.MovieDetailActivity
 import com.pernas.miapp.ui.MovieSearch.MoviesAdapter
 
@@ -66,6 +68,19 @@ class FavoritesFragment : Fragment(), Favorites {
                 Toast.makeText(this.context, "click en orden", Toast.LENGTH_LONG).show()
                 return true
             }
+            com.pernas.miapp.R.id.subordenar -> {
+                val presenter = FavoritesPresenter(this)
+                val myDatabase = DatabaseFactory.get(this.context!!)
+                val moviesDao = myDatabase.moviesDao()
+
+                presenter.orderFavorites(moviesDao)
+                return true
+            }
+            com.pernas.miapp.R.id.subordenar2 -> {
+                Toast.makeText(this.context, "click en orden", Toast.LENGTH_LONG).show()
+                return true
+            }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -93,6 +108,17 @@ class FavoritesFragment : Fragment(), Favorites {
         val myDatabase = DatabaseFactory.get(this.context!!)
         val moviesDao = myDatabase.moviesDao()
         presenter.updateFavorites(moviesDao)
+
+
+        fun checkFavorites() {
+            CoroutineScope(Dispatchers.IO).launch {
+                presenter.checkFavorites(moviesDao)
+
+            }
+        }
+
+
+
 
 
 

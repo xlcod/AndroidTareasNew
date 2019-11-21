@@ -12,11 +12,11 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.pernas.miapp.ui.MovieSearch.searchFragment"
-        android:label="fragment_search"
+        android:label="Search Movie"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/favoritesFragment"
         android:name="com.pernas.miapp.ui.Favorites.FavoritesFragment"
-        android:label="fragment_favorites"
+        android:label="Favorites"
         tools:layout="@layout/fragment_favorites" />
 </navigation>

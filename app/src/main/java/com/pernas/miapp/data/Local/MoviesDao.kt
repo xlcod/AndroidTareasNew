@@ -8,15 +8,16 @@ import androidx.room.Query
 @Dao
 interface MoviefavoritesDao {
 
-    @Query("SELECT * FROM  MovieData")
-    suspend fun getAll(): List<MovieData>
-
+    @Query("SELECT * FROM  MovieData ORDER BY :order ASC")
+    suspend fun getAll(order: String ): List<MovieData>
 
     @Insert
     suspend fun insert(movies: MovieData)
 
     @Query("DELETE FROM MovieData")
-    suspend fun nukeTable()
+    suspend fun deleteTable()
+
+
 
 
 }

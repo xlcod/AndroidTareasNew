@@ -14,7 +14,7 @@ import kotlinx.coroutines.withContext
 class FavoritesPresenter(val view: Favorites) {
     fun updateFavorites(dao: MoviefavoritesDao) {
         CoroutineScope(Dispatchers.IO).launch {
-            val title = dao.getAll()
+            val title = dao.getAll("Title")
             Log.e("prueba", "$title")
             withContext(Dispatchers.Main) {
                 view.showMyFavorites(title)
@@ -24,15 +24,20 @@ class FavoritesPresenter(val view: Favorites) {
 
     fun deleteDatabase(dao: MoviefavoritesDao) {
         CoroutineScope(Dispatchers.IO).launch {
-            val title = dao.nukeTable()
+            val title = dao.deleteTable()
             Log.e("prueba", "$title")
-
         }
-
     }
 
     fun movieClicked(favorites: MovieData) {
         favorites.movie_id?.let { view.openMovieDetail(it) }
+    }
+    fun checkFavorites( myDataCheck: MoviefavoritesDao) {
+    }
+    fun orderFavorites(dao: MoviefavoritesDao) {
+        CoroutineScope(Dispatchers.IO).launch {
+             dao.getAll("Title")
+        }
     }
 }
 
@@ -40,6 +45,5 @@ class FavoritesPresenter(val view: Favorites) {
 interface Favorites {
     fun showMyFavorites(listFav: List<MovieData>)
     fun openMovieDetail(id: Int)
-
 }
 

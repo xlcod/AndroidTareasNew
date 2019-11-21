@@ -28,6 +28,8 @@ class MovieDetailPresenter(val view: MovieDetailView) {
         }
     }
 
+
+
     interface MovieDetailView {
         fun showMovieDetail(detailList: MovieDetail)
         fun sendFavorites(detailList: MovieDetail,movieid: Int)

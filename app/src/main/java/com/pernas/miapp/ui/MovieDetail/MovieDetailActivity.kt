@@ -22,19 +22,30 @@ import kotlinx.coroutines.withContext
 class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetailView {
 
 
-    override fun sendFavorites(detailList: MovieDetail,myMovieId: Int) {
+    override fun sendFavorites(detailList: MovieDetail, myMovieId: Int) {
         favorites_icon.setOnClickListener {
             val database = DatabaseFactory.get(this)
             val moviesDao = database.moviesDao()
             CoroutineScope(Dispatchers.IO).launch {
-                moviesDao.insert(MovieData(movie_id= myMovieId,title = detailList.title,year = detailList.release_date,rating = detailList.vote_average))
+                moviesDao.insert(
+                    MovieData(
+                        movie_id = myMovieId,
+                        title = detailList.title,
+                        year = detailList.release_date,
+                        rating = detailList.vote_average
+                    )
+                )
                 withContext(Dispatchers.Main) {
-                    Log.e("Desde main", moviesDao.getAll().toString())
+                    Toast.makeText(
+                        this@MovieDetailActivity,
+                        "Added to favorites! :)",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    //Log.e("Desde main", moviesDao.getAll("Title").toString())
                 }
             }
         }
     }
-
 
 
     override fun showMovieDetail(detailList: MovieDetail) {
@@ -62,6 +73,6 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
     }
 
     fun movieDetailGenre(name: genresList) {
-        movieDetailGenre.text=name.name
+        movieDetailGenre.text = name.name
     }
 }
