@@ -34,7 +34,7 @@ class searchFragment : Fragment(), MovieSearchView {
         MoviesRecyclerView.visibility = View.VISIBLE
     }
 
-    override fun openMovieDetail(id: Int) {
+    override fun openMovieDetail(id: Int) {//intent to open the new detail activity
         val intent = Intent(this.context, MovieDetailActivity::class.java)
         intent.putExtra("movie_id", id)
         startActivity(intent)

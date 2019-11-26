@@ -25,7 +25,7 @@ import com.pernas.miapp.ui.MovieDetail.MovieDetailActivity
  * A simple [Fragment] subclass.
  */
 class FavoritesFragment : Fragment(), Favorites {
-
+    lateinit var myPresenter: FavoritesPresenter
     lateinit var favoritesAdapter: FavoritesAdapter
     lateinit var myRecyclerView: RecyclerView
 
@@ -45,13 +45,21 @@ class FavoritesFragment : Fragment(), Favorites {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        val presenter = FavoritesPresenter(this)
+        val myDatabase = DatabaseFactory.get(this.context!!)
+        val moviesDao = myDatabase.moviesDao()
+        presenter.updateFavorites(moviesDao)
+    }
+
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(com.pernas.miapp.R.menu.menu_favorites, menu)
         super.onCreateOptionsMenu(menu, inflater)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {// selecting the item menu
+        return when (item.itemId) {//deleting my favorites
             com.pernas.miapp.R.id.deleteItem -> {
                 Toast.makeText(this.context, "click en delete", Toast.LENGTH_LONG).show()
                 val myDatabase = DatabaseFactory.get(this.context!!)
@@ -109,12 +117,7 @@ class FavoritesFragment : Fragment(), Favorites {
 
         PreferencesLocalRepository(moviesDao)
 
-        fun checkFavorites() {
-            CoroutineScope(Dispatchers.IO).launch {
-                presenter.checkFavorites(moviesDao)
 
-            }
-        }
         return view
     }
 }

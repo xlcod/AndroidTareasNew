@@ -2,22 +2,23 @@ package com.pernas.miapp.ui.MovieDetail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.ImageView
 import android.widget.Toast
-import com.pernas.miapp.R
 import com.pernas.miapp.data.Local.DatabaseFactory
 import com.pernas.miapp.data.Local.MovieData
 import com.pernas.miapp.model.MovieDetail
-import com.pernas.miapp.model.genresList
-import com.pernas.miapp.ui.Favorites.Favorites
-import com.pernas.miapp.ui.Favorites.FavoritesPresenter
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_details_movie.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+
+import android.content.ActivityNotFoundException
+import android.R.id
+import android.content.Intent
+import android.net.Uri
+import android.util.Log
+
 
 class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetailView {
 
@@ -44,6 +45,20 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
                 }
             }
         }
+
+        shareYoutube.setOnClickListener() {
+            val id: String = detailList.title
+            val appIntent = Intent(Intent.ACTION_VIEW, Uri.parse("vnd.youtube"))
+            val webIntent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/results?search_query=$id")
+            )
+            try {
+                this.startActivity(appIntent)
+            } catch (ex: ActivityNotFoundException) {
+                this.startActivity(webIntent)
+            }
+        }
     }
 
 
@@ -53,13 +68,13 @@ class MovieDetailActivity : AppCompatActivity(), MovieDetailPresenter.MovieDetai
         movieDetailDescription.text = detailList.overview
         movieDetailRating.text = detailList.vote_average
         val photo = "https://image.tmdb.org/t/p/w500" + detailList.backdrop_path
-        Picasso.get().load(photo).placeholder(R.drawable.ic_launcher_background)
-            .error(R.drawable.ic_launcher_foreground).into(imageViewMovie)
+        Picasso.get().load(photo).placeholder(com.pernas.miapp.R.drawable.ic_launcher_background)
+            .error(com.pernas.miapp.R.drawable.ic_launcher_foreground).into(imageViewMovie)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.fragment_details_movie)
+        setContentView(com.pernas.miapp.R.layout.fragment_details_movie)
 
         val movieId = intent.extras?.getInt("movie_id")
         val presenter = MovieDetailPresenter(this)

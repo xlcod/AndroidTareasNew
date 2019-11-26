@@ -8,7 +8,7 @@ import androidx.room.Query
 @Dao
 interface MoviefavoritesDao {
 
-    @Query("SELECT * FROM  MovieData ORDER BY :order ASC")
+    @Query("SELECT * FROM  MovieData ORDER BY :order ")
     suspend fun getAll(order: String ): List<MovieData>
 
     @Insert

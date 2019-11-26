@@ -30,8 +30,7 @@ class FavoritesPresenter(val view: Favorites) {
         favorites.movie_id?.let { view.openMovieDetail(it) }
     }
 
-    fun checkFavorites(myDataCheck: MoviefavoritesDao) {
-    }
+
 
     fun orderFavorites(dao: MoviefavoritesDao) {
         CoroutineScope(Dispatchers.IO).launch {

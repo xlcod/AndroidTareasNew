@@ -16,7 +16,7 @@ class MovieDetailPresenter(val view: MovieDetailView) {
     fun fetchMovieDetail(movieId: Int) {
         val movieDbApi = RetrofitFactory.getMovieDbApi()
         CoroutineScope(Dispatchers.IO).launch {
-            val response = movieDbApi.getMovieDetail(movieId, "77335f53286ea3ce074ab21558a8fd05")
+            val response = movieDbApi.getMovieDetail(movieId, "77335f53286ea3ce074ab21558a8fd05") //api call to detail
             withContext(Dispatchers.Main) {
                 if (response.isSuccessful) {
                     view.showMovieDetail(response.body()!!)
